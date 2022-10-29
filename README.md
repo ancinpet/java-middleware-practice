@@ -1,2 +1,2 @@
-# java-middleware-practice
-Java - architecture of middleware practice
+# Practice for architecture of middleware class
+Some basic implementation of middlewares in Java EE
