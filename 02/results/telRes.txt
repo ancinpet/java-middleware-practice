@@ -1,0 +1,10 @@
+telnet> Trying 147.32.233.18...
+Connected to 147.32.233.18.
+Escape character is '^]'.
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: text/html;charset=UTF-8
+Content-Length: 3
+Date: Sat, 19 Oct 2019 14:23:55 GMT
+
+OK

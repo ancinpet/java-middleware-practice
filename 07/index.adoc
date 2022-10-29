@@ -1,0 +1,3 @@
+= HW7
+
+Results folder contains some images (not everything) of SoapUI tests, only has some asserts because they are harder to screenshot especially on the VM image

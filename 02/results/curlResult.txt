@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Protocol</title>
+</head>
+<body>
+<h1>Protocol</h1>
+<p>Your next page is <a href="./protocol/welcome">/protocol/welcome</a></p>
+<pre>curl http://147.32.233.18:8888/MI-MDW-ApplicationProtocols/protocol/welcome</pre>
+<p><a href="http://curl.haxx.se/docs/httpscripting.html">Help</a></p>
+</body>
+</html>
+
+
+OK
+Your next page is /protocol/get
+send GET parameter "name" with value "every" 
+set Header "Accept" to "text/plain" 
+
+
+OK
+Your next page is /protocol/post 
+send POST parameter "name" with value "allen"
+and set Header "Accept" is "text/plain" 
+and set Header "Accept-Language" is "en-US" 
+
+
+OK
+Your next page is /protocol/referer 
+change referer to value "impression"
+set Header "Accept" is "text/html" 
+
+
+OK
+Your next page is /protocol/useragent
+and change User-Agent to value "expresses"
+and set Header "Accept-Language" is "en-US" 
+
+
+OK
+Your next page is /protocol/cookie 
+send cookie called "name" with value "rice"
+
+
+OK
+Your next page is /protocol/auth 
+authenticate by "worse:needed"
+set Header "Accept" is "text/html" 
+
+
+OK
+Your final result is: future

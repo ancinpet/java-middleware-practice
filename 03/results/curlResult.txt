@@ -1,0 +1,100 @@
+Default functionality test --------------------------------
+<h1>Thank you for creating order!</h1>
+<span>Please follow the link: </span><a href="?state=payment">PAY ORDER</a>
+
+<h1>Thank you for payment of the order!</h1>
+<span>Please follow the link: </span><a href="?state=completed">REVIEW</a>
+
+<h1>Your order is ready!</h1>
+<span>Thank you for your cooperation, for new order, follow: </span><a href="?state=new">NEW ORDER</a>
+<br><span>Go back to our main page: </span><a href="?">START</a>
+
+
+Payment skip test --------------------------------
+<h1>Thank you for creating order!</h1>
+<span>Please follow the link: </span><a href="?state=payment">PAY ORDER</a>
+
+<h1>Whoops, you are not supposed to be here!</h1>
+<span>Please follow the link: </span><a href="?state=payment">PAY ORDER</a>
+
+<h1>Thank you for payment of the order!</h1>
+<span>Please follow the link: </span><a href="?state=completed">REVIEW</a>
+
+<h1>Your order is ready!</h1>
+<span>Thank you for your cooperation, for new order, follow: </span><a href="?state=new">NEW ORDER</a>
+<br><span>Go back to our main page: </span><a href="?">START</a>
+
+
+User navigation test --------------------------------
+<h1>Welcome to the main page of the application!</h1>
+<span>To create new booking, please follow this link: </span><a href="?state=new">CREATE NEW ORDER</a>
+
+<h1>Thank you for creating order!</h1>
+<span>Please follow the link: </span><a href="?state=payment">PAY ORDER</a>
+
+<h1>Thank you for payment of the order!</h1>
+<span>Please follow the link: </span><a href="?state=completed">REVIEW</a>
+
+<h1>Your order is ready!</h1>
+<span>Thank you for your cooperation, for new order, follow: </span><a href="?state=new">NEW ORDER</a>
+<br><span>Go back to our main page: </span><a href="?">START</a>
+
+<h1>Thank you for creating order!</h1>
+<span>Please follow the link: </span><a href="?state=payment">PAY ORDER</a>
+
+<h1>Thank you for payment of the order!</h1>
+<span>Please follow the link: </span><a href="?state=completed">REVIEW</a>
+
+<h1>Your order is ready!</h1>
+<span>Thank you for your cooperation, for new order, follow: </span><a href="?state=new">NEW ORDER</a>
+<br><span>Go back to our main page: </span><a href="?">START</a>
+
+<h1>Welcome to the main page of the application!</h1>
+<span>To create new booking, please follow this link: </span><a href="?state=new">CREATE NEW ORDER</a>
+
+<h1>Thank you for creating order!</h1>
+<span>Please follow the link: </span><a href="?state=payment">PAY ORDER</a>
+
+<h1>Thank you for payment of the order!</h1>
+<span>Please follow the link: </span><a href="?state=completed">REVIEW</a>
+
+<h1>Your order is ready!</h1>
+<span>Thank you for your cooperation, for new order, follow: </span><a href="?state=new">NEW ORDER</a>
+<br><span>Go back to our main page: </span><a href="?">START</a>
+
+
+Bad function test --------------------------------
+<h1>Whoops, you are not supposed to be here!</h1>
+<span>Please follow the link: </span><a href="?state=new">NEW ORDER</a>
+
+<h1>Whoops, you are not supposed to be here!</h1>
+<span>Please follow the link: </span><a href="?state=new">NEW ORDER</a>
+
+<h1>Whoops, you are not supposed to be here!</h1>
+<span>Please follow the link: </span><a href="?state=new">NEW ORDER</a>
+
+<h1>Whoops, you are not supposed to be here!</h1>
+<span>Please follow the link: </span><a href="?state=new">NEW ORDER</a>
+
+<h1>Welcome to the main page of the application!</h1>
+<span>To create new booking, please follow this link: </span><a href="?state=new">CREATE NEW ORDER</a>
+
+<h1>Welcome to the main page of the application!</h1>
+<span>To create new booking, please follow this link: </span><a href="?state=new">CREATE NEW ORDER</a>
+
+<h1>Thank you for creating order!</h1>
+<span>Please follow the link: </span><a href="?state=payment">PAY ORDER</a>
+
+<h1>Welcome to the main page of the application!</h1>
+<p>Looks like you left off without finishing your order!</p>
+<span>Please follow the link: </span><a href="?state=payment">PAY ORDER</a>
+
+<h1>Thank you for payment of the order!</h1>
+<span>Please follow the link: </span><a href="?state=completed">REVIEW</a>
+
+<h1>Whoops, you are not supposed to be here!</h1>
+<span>Please follow the link: </span><a href="?state=completed">REVIEW</a>
+
+<h1>Your order is ready!</h1>
+<span>Thank you for your cooperation, for new order, follow: </span><a href="?state=new">NEW ORDER</a>
+<br><span>Go back to our main page: </span><a href="?">START</a>

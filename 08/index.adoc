@@ -1,0 +1,11 @@
+= HW8
+
+Results folder contains images from testing through the weblogic test client.
+
+Services TripBooking and FlightBooking return Booking objects when bookTrip and bookFlight are called.
+
+Services TripBooking and FlightBooking have maximum limit of Bookings (9 and 6). After this limit is reached, Bookings are not saved and they return null pattern object instead.
+
+Service GeneralBooking calls these services and checks if the object is null object. If it is, it returns String informing that booking cannot be made. If it was made, it returns details about the booking.
+
+For generating the GeneralBooking ""client"" (proxy to TripBooking and FlightBooking) WSimport was used because eclipse generation did not work correctly.

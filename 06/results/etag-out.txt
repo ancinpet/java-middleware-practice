@@ -1,0 +1,319 @@
+GET /customers
+[
+  {
+    "id": 4,
+    "name": "Customer #1",
+    "orders": [
+      {
+        "id": 400,
+        "item": "Item #400"
+      },
+      {
+        "id": 800,
+        "item": "Item #800"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Customer #1",
+    "orders": [
+      {
+        "id": 300,
+        "item": "Item #300"
+      },
+      {
+        "id": 600,
+        "item": "Item #600"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Customer #1",
+    "orders": [
+      {
+        "id": 200,
+        "item": "Item #200"
+      },
+      {
+        "id": 400,
+        "item": "Item #400"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Customer #206661000",
+    "orders": [
+      {
+        "id": 100,
+        "item": "Item #100"
+      },
+      {
+        "id": 200,
+        "item": "Item #85531000"
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "name": "Customer #1",
+    "orders": [
+      {
+        "id": 0,
+        "item": "Item #0"
+      },
+      {
+        "id": 0,
+        "item": "Item #0"
+      }
+    ]
+  }
+]
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 7001 (#0)
+> GET /hw6/customers?caching=etag HTTP/1.1
+> Host: localhost:7001
+> User-Agent: curl/7.47.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Cache-Control: private, no-store, max-age=10
+< Date: Mon, 11 Nov 2019 16:30:50 GMT
+< Content-Length: 998
+< Content-Type: application/json
+< ETag: aa3efe7a6dfeb4ea80c60c40c0b02df8
+< 
+* Connection #0 to host localhost left intact
+
+------------------------------
+GET /customers (cache revalidate)
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 7001 (#0)
+> GET /hw6/customers?caching=etag HTTP/1.1
+> Host: localhost:7001
+> User-Agent: curl/7.47.0
+> Accept: */*
+> If-None-Match: aa3efe7a6dfeb4ea80c60c40c0b02df8
+> 
+< HTTP/1.1 304 Not Modified
+< Cache-Control: private, no-store, max-age=10
+< Date: Mon, 11 Nov 2019 16:31:00 GMT
+< Content-Type: application/json
+< ETag: aa3efe7a6dfeb4ea80c60c40c0b02df8
+< 
+* Connection #0 to host localhost left intact
+
+------------------------------
+POST /customers/1/orders/1 (simulate data modification - weak)
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 7001 (#0)
+> POST /hw6/customers/1/orders/1 HTTP/1.1
+> Host: localhost:7001
+> User-Agent: curl/7.47.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Date: Mon, 11 Nov 2019 16:31:01 GMT
+< Content-Length: 0
+< 
+* Connection #0 to host localhost left intact
+
+------------------------------
+GET /customers (cache revalidate)
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 7001 (#0)
+> GET /hw6/customers?caching=etag HTTP/1.1
+> Host: localhost:7001
+> User-Agent: curl/7.47.0
+> Accept: */*
+> If-None-Match: aa3efe7a6dfeb4ea80c60c40c0b02df8
+> 
+< HTTP/1.1 200 OK
+< Cache-Control: private, no-store, max-age=10
+< Date: Mon, 11 Nov 2019 16:31:10 GMT
+< Content-Length: 999
+< Content-Type: application/json
+< ETag: 3b8f45ebce725875c8f011a245f8ae3e
+< 
+[
+  {
+    "id": 4,
+    "name": "Customer #1",
+    "orders": [
+      {
+        "id": 400,
+        "item": "Item #400"
+      },
+      {
+        "id": 800,
+        "item": "Item #800"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Customer #1",
+    "orders": [
+      {
+        "id": 300,
+        "item": "Item #300"
+      },
+      {
+        "id": 600,
+        "item": "Item #600"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Customer #1",
+    "orders": [
+      {
+        "id": 200,
+        "item": "Item #200"
+      },
+      {
+        "id": 400,
+        "item": "Item #400"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Customer #206661000",
+    "orders": [
+      {
+        "id": 100,
+        "item": "Item #100"
+      },
+      {
+        "id": 200,
+        "item": "Item #389271000"
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "name": "Customer #1",
+    "orders": [
+      {
+        "id": 0,
+        "item": "Item #0"
+      },
+      {
+        "id": 0,
+        "item": "Item #0"
+      }
+    ]
+  }
+]
+* Connection #0 to host localhost left intact
+
+------------------------------
+POST /customers/1 (simulate data modification)
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 7001 (#0)
+> POST /hw6/customers/1 HTTP/1.1
+> Host: localhost:7001
+> User-Agent: curl/7.47.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Date: Mon, 11 Nov 2019 16:31:11 GMT
+< Content-Length: 0
+< 
+* Connection #0 to host localhost left intact
+
+------------------------------
+GET /customers (cache revalidate)
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 7001 (#0)
+> GET /hw6/customers?caching=etag HTTP/1.1
+> Host: localhost:7001
+> User-Agent: curl/7.47.0
+> Accept: */*
+> If-None-Match: aa3efe7a6dfeb4ea80c60c40c0b02df8
+> 
+< HTTP/1.1 200 OK
+< Cache-Control: private, no-store, max-age=10
+< Date: Mon, 11 Nov 2019 16:31:20 GMT
+< Content-Length: 999
+< Content-Type: application/json
+< ETag: a40df4c398bbae79f4dc97e997d11fc6
+< 
+[
+  {
+    "id": 4,
+    "name": "Customer #1",
+    "orders": [
+      {
+        "id": 400,
+        "item": "Item #400"
+      },
+      {
+        "id": 800,
+        "item": "Item #800"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Customer #1",
+    "orders": [
+      {
+        "id": 300,
+        "item": "Item #300"
+      },
+      {
+        "id": 600,
+        "item": "Item #600"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Customer #1",
+    "orders": [
+      {
+        "id": 200,
+        "item": "Item #200"
+      },
+      {
+        "id": 400,
+        "item": "Item #400"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Customer #623381000",
+    "orders": [
+      {
+        "id": 100,
+        "item": "Item #100"
+      },
+      {
+        "id": 200,
+        "item": "Item #389271000"
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "name": "Customer #1",
+    "orders": [
+      {
+        "id": 0,
+        "item": "Item #0"
+      },
+      {
+        "id": 0,
+        "item": "Item #0"
+      }
+    ]
+  }
+]
+* Connection #0 to host localhost left intact
+

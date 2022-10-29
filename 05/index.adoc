@@ -1,0 +1,13 @@
+= HW5
+How to use:
+
+GET /hw5/customer - lists all customers in database
+
+DELETE /hw5/customer/{customerId} - deletes customer with id customerId asynchronously with simulated 10 second delay and provides redirect URL to service that confirms deletion
+
+GET /hw5/confirm/{confirmationId} - provides information about deletion state, confirmationId is provided when calling DELETE on customer
+
+
+Examples:
+
+Examples are located in the results folder.

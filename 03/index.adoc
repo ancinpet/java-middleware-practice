@@ -1,0 +1,11 @@
+= Homework 3
+
+Also includes default navigation localhost/hw3/booking
+
+Possible GET requests for state transfer: 
+
+localhost/hw3/booking?state=new - NEW ORDER
+
+localhost/hw3/booking?state=payment - WAITING FOR PAYMENT
+
+localhost/hw3/booking?state=completed - PAYMENT COMPLETED

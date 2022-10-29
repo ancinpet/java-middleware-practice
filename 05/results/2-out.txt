@@ -1,0 +1,21 @@
+[24-Customer #24, 23-Customer #23, 22-Customer #22, 21-Customer #21, 20-Customer #20, 19-Customer #19, 18-Customer #18, 17-Customer #17, 16-Customer #16, 15-Customer #15, 14-Customer #14, 13-Customer #13, 12-Customer #12, 11-Customer #11, 10-Customer #10, 9-Customer #9, 8-Customer #8, 7-Customer #7, 6-Customer #6, 5-Customer #5, 4-Customer #4, 3-Customer #3, 2-Customer #2, 1-Customer #1, 0-Customer #0]
+
+Deletion pending...
+See <a href="http://localhost:7001/hw5/confirm/0">LINK</a> for deletion status.
+
+
+[24-Customer #24, 23-Customer #23, 22-Customer #22, 21-Customer #21, 20-Customer #20, 19-Customer #19, 18-Customer #18, 17-Customer #17, 16-Customer #16, 15-Customer #15, 14-Customer #14, 13-Customer #13, 12-Customer #12, 11-Customer #11, 10-Customer #10, 9-Customer #9, 8-Customer #8, 7-Customer #7, 6-Customer #6, 5-Customer #5, 4-Customer #4, 3-Customer #3, 2-Customer #2, 1-Customer #1, 0-Customer #0]
+
+Delete is still pending...
+
+[24-Customer #24, 23-Customer #23, 22-Customer #22, 21-Customer #21, 20-Customer #20, 19-Customer #19, 18-Customer #18, 17-Customer #17, 16-Customer #16, 15-Customer #15, 14-Customer #14, 13-Customer #13, 12-Customer #12, 11-Customer #11, 10-Customer #10, 9-Customer #9, 8-Customer #8, 7-Customer #7, 6-Customer #6, 5-Customer #5, 4-Customer #4, 3-Customer #3, 2-Customer #2, 1-Customer #1, 0-Customer #0]
+
+Delete is still pending...
+
+Item deleted
+
+[24-Customer #24, 23-Customer #23, 22-Customer #22, 21-Customer #21, 20-Customer #20, 19-Customer #19, 18-Customer #18, 17-Customer #17, 16-Customer #16, 15-Customer #15, 14-Customer #14, 13-Customer #13, 12-Customer #12, 11-Customer #11, 10-Customer #10, 9-Customer #9, 8-Customer #8, 7-Customer #7, 6-Customer #6, 5-Customer #5, 4-Customer #4, 3-Customer #3, 1-Customer #1, 0-Customer #0]
+
+Item deleted
+
+[24-Customer #24, 23-Customer #23, 22-Customer #22, 21-Customer #21, 20-Customer #20, 19-Customer #19, 18-Customer #18, 17-Customer #17, 16-Customer #16, 15-Customer #15, 14-Customer #14, 13-Customer #13, 12-Customer #12, 11-Customer #11, 10-Customer #10, 9-Customer #9, 8-Customer #8, 7-Customer #7, 6-Customer #6, 5-Customer #5, 4-Customer #4, 3-Customer #3, 1-Customer #1, 0-Customer #0]

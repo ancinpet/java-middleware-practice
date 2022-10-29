@@ -1,0 +1,5 @@
+= Homework 2
+
+Both telnet and curl scripts are in directory src (can be run from bash).
+
+The output is in directory results.

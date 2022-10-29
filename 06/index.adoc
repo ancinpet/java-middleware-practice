@@ -1,0 +1,14 @@
+= HW6
+How to use:
+
+GET /hw6/customer?caching={param} - lists all customers in database, param sets what caching method to use (lastmodified, etag, wetag)
+
+Normally we would just send headers and let browser decide or only choose one option but for this homework, it is easier to test with parameter
+
+POST /hw6/customers/{customerId} - Modifies customers name randomly (helper)
+
+POST /hw6/customers/{customerId}/orders/{orderId} - Modifies customers order randomly (helper for weak etag)
+
+Examples:
+
+Examples are located in the results folder.

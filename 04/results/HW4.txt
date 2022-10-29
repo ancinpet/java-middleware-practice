@@ -1,0 +1,124 @@
+Data model
+place ← owner → car → plate
+     n:m     1:n   1:n
+car can have multiple plates (e.g. when it gets stolen)
+
+Owner
+/owners - insert new owner
+HTTP method: POST
+Status codes: 201 - created, 400 - bad request
+
+/owners/{id} - insert new owner or replace existing at id
+HTTP method: PUT
+Status codes: 200 - updated, 201 - created, 400 - bad request
+
+/owners - show list of owners
+HTTP method: GET
+Status codes: 200 - ok, 400 - bad request
+
+/owners?name={name} - show list of owners with a specific name
+HTTP method: GET
+Status codes: 200 - ok, 400 - bad request
+
+/owners?pid={pid} - show owner with a specific personal identification number
+HTTP method: GET
+Status codes: 200 - ok, 400 - bad request
+
+/owners/{id} - show one particular owner
+HTTP method: GET
+Status codes: 200 - ok, 400 - bad request
+
+/owners/{id}/cars - show list of cars of one particular owner
+HTTP method: GET
+Status codes: 200 - ok, 400 - bad request
+
+/owners/{id}/cars/{id} - show a specific car of one particular owner
+HTTP method: GET
+Status codes: 200 - ok, 400 - bad request
+
+/owners/{id}/places - show list of places of one particular owner
+HTTP method: GET
+Status codes: 200 - ok, 400 - bad request
+
+/owners/{id} - delete specific owner
+HTTP method: DELETE
+Status codes: 204 - no content, 400 - bad request
+
+Place
+/places - insert new place
+HTTP method: POST
+Status codes: 201 - created, 400 - bad request
+
+/places/{id} - insert new place or replace existing at id
+HTTP method: PUT
+Status codes: 200 - updated, 201 - created, 400 - bad request
+
+/places - show list of places
+HTTP method: GET
+Status codes: 200 - ok, 400 - bad request
+
+/places/{id} - show specific place
+HTTP method: GET
+Status codes: 200 - ok, 400 - bad request
+
+/places/{id} - delete specific place
+HTTP method: DELETE
+Status codes: 204 - no content, 400 - bad request
+
+Car
+/cars - insert new car
+HTTP method: POST
+Status codes: 201 - created, 400 - bad request
+
+/cars/{id} - insert new car or replace existing at id
+HTTP method: PUT
+Status codes: 200 - updated, 201 - created, 400 - bad request
+
+/cars - show list of cars
+HTTP method: GET
+Status codes: 200 - ok, 400 - bad request
+
+/cars?brand={carBrand} - show list of cars with a specific car brand
+HTTP method: GET
+Status codes: 200 - ok, 400 - bad request
+
+/cars/{id} - show specific car
+HTTP method: GET
+Status codes: 200 - ok, 400 - bad request
+
+/cars/{id}/plates - show list of plates of a specific car
+HTTP method: GET
+Status codes: 200 - ok, 400 - bad request
+
+/cars/{id}/plates/{id} - show specific plate of a specific car
+HTTP method: GET
+Status codes: 200 - ok, 400 - bad request
+
+/cars/{id} - delete specific car
+HTTP method: DELETE
+Status codes: 204 - no content, 400 - bad request
+
+Plate
+/plates - insert new plate
+HTTP method: POST
+Status codes: 201 - created, 400 - bad request
+
+/plates/{id} - insert new plate or replace existing at id
+HTTP method: PUT
+Status codes: 200 - updated, 201 - created, 400 - bad request
+
+/plates - show list of plates
+HTTP method: GET
+Status codes: 200 - ok, 400 - bad request
+
+/plates/{id} - show specific plate
+HTTP method: GET
+Status codes: 200 - ok, 400 - bad request
+
+/plates/{id}/car - show the car of a specific plate
+HTTP method: GET
+Status codes: 200 - ok, 400 - bad request
+
+/plates/{id} - delete specific plate
+HTTP method: DELETE
+Status codes: 204 - no content, 400 - bad request
