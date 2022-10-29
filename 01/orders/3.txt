@@ -1,0 +1,9 @@
+Hello,
+
+I want to reserve a trip I found on your website.
+It says that I should put the Trip id here. Trip id: "8".
+The location should be following: Location: "London UK".
+Only I am going, here are my details: Person: "Niguen Masara".
+
+Thank you for processing this order,
+Niguen Masara.

@@ -1,0 +1,5 @@
+Dear Sir or Madam,
+I would like to book a trip. I am a bit old so I do not really understand the instructions, but the order system says my Trip id is "1", location of the trip is "Spain - Barcelona" and person is me, "Jan Stary".
+
+Yours faithfully,
+Jan Stary.

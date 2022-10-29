@@ -1,0 +1,10 @@
+Automatically generated message:
+
+Reservation system ********.com - bookings made:
+===
+Trip id: "3"
+Location: "Prague"
+Person: "Frederig Rodriguez Santana"
+===
+
+Do not reply, this email is not being monitored.

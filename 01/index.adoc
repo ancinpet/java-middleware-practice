@@ -1,0 +1,15 @@
+= Homework 1
+
+How to use:
+
+fit.ancinpet.App <path to file> (path to file)*
+
+
+fit.ancinpet.App "orders\1.txt"
+
+fit.ancinpet.App "orders\1.txt" "orders\2.txt" "orders\3.txt" "orders\4.txt"
+
+
+Output is in "results\<file name>-out.json" assuming the input file is parsable, otherwise no file is created.
+
+"results\1-out.json"
