@@ -1,0 +1,5 @@
+= HW10
+
+ServerMonitor checks server statuses continuously and allows to get healthy server.
+
+Healthy server return is random out of all healthy.

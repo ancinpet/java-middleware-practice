@@ -1,0 +1,5 @@
+= HW9
+
+Photos are in the results folder
+
+Client makes Trips and Bookings randomly and sends them into the all queue. The processor pops these objects from the all queue and forwards them to booking or trip queues based on their type. The Trip and Booking processors pop them out of their queues and "process" them.
